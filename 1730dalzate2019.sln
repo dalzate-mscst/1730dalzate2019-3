@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dalzate3d1", "dalzate3d1\da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dalzate3Quiz1", "dalzate3Quiz1\dalzate3Quiz1.csproj", "{A4469FEC-FDDB-4E00-A04B-58F4F9827FD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dalzate3d1UnitTests", "dalzate3d1UnitTests\dalzate3d1UnitTests.csproj", "{694CE590-FE37-4D9A-B919-081133E5D9BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{A4469FEC-FDDB-4E00-A04B-58F4F9827FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4469FEC-FDDB-4E00-A04B-58F4F9827FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4469FEC-FDDB-4E00-A04B-58F4F9827FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{694CE590-FE37-4D9A-B919-081133E5D9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{694CE590-FE37-4D9A-B919-081133E5D9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{694CE590-FE37-4D9A-B919-081133E5D9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{694CE590-FE37-4D9A-B919-081133E5D9BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,9 +20,49 @@ namespace dalzate3d1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int[] values = { 300, 500, 200, 150, 600, 750, 900, 150,
+            100, 200, 250, 650, 300, 750, 800, 350, 250, 150, 100, 300 };
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.valuesTextBox.Text = Ex3dCalculations.ArrayToString(this.values);
+
+        }
+
+        private void searchValuesComboBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            valueCountTextBox.Text = "";
+            try
+            {
+                this.searchValuesComboBox.Text = "";
+                this.valueCountTextBox.Text = "";
+                if (searchValuesComboBox.SelectedItem != null)
+                {
+                    int result = int.Parse(searchValuesComboBox.SelectedItem.ToString());
+                }
+            }
+            catch { }
+        }
+
+        private void searchRangesComboBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int dashIndex = this.searchRangesComboBox.Text.IndexOf('-');
+            string strSearchMin = this.searchRangesComboBox.Text.Substring(0, dashIndex).Trim();
+            string strSearchMax = this.searchRangesComboBox.Text.Substring(dashIndex + 1).Trim();
+            rangeCountTextBox.Text = "";
+            try
+            {
+                if (searchRangesComboBox.SelectedItem != null)
+                {
+                    int result = int.Parse(searchValuesComboBox.SelectedItem.ToString());
+                }
+            }
+            catch { }
         }
     }
 }
